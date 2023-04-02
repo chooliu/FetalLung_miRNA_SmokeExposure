@@ -61,7 +61,7 @@ diablo_maleonly_full <-
 # print variables
 selectVar(diablo_maleonly_full, block = 'miRNA', comp = 1)$miRNA$name 
 selectVar(diablo_maleonly_full, block = 'mRNA', comp = 1)$mRNA$name %>%
-  sort %>% paste(collapse = "; ") 
+  sort %>% paste(collapse = ", ") 
 
 # check AUC, stable features
 perform_maleonly_full <-
