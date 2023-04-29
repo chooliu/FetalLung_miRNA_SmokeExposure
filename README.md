@@ -1,19 +1,16 @@
-### FetalLung_IUS_miRNA 
+## Intrauterine Smoke Exposure, microRNA Expression during Human Lung Development, and Childhood Asthma
 
-
-### Summary
-
-**"MicroRNA Dysregulation Associated with Intrauterine Smoke Exposure in Human Lung Development Also Correlates with Asthma and Allergy Outcomes"** (submitted)
+### Research Summary
 
 Intrauterine smoke exposure (IUS) is associated with increased post-natal asthma risk and immune dysregulation, but the underlying pathophysiology is poorly understood. Given the role of miRNAs in orchestrating gene regulatory programs during lung development, we hypothesized that IUS alters miRNA profiles during prenatal lung development.
 
-Using paired miRNA and mRNA profiles from n = 298 whole human fetal lung samples, we demonstrate that: **(i)** IUS is associated with differential expression of miRNAs in early lung development. These fetal lung IUS-miRNAs are plausibly associated with the developmental origins of allergy and airway disease, based on their **(ii)** correlation with mRNA genes relevant to lung development and asthma/immunity within fetal lung and **(iii)** correlation to post-natal outcomes such as IgE and FEV1/FVC in serum miRNA profiles of a childhood asthmatics cohort (GACRS). We also find evidence for **(iv)** sex-by-IUS interactions in fetal lung, with more statistically significant IUS-associated miRNAs in male samples than female samples and distinct miRNA-mRNA networks by sex.
+Using paired miRNA and mRNA profiles from n = 298 human fetal lung samples, we demonstrate that: **(i)** IUS is associated with differential expression of miRNAs in early lung development. These fetal lung IUS-miRNAs are plausibly associated with the developmental origins of allergy and airway disease, based on their **(ii)** correlation with mRNA genes relevant to lung development and asthma/immunity within fetal lung (e.g., ORDML3, oxidative stress/mGLuR genes) and **(iii)** correlation to post-natal outcomes such as IgE and FEV1/FVC within serum miRNA profiles of a childhood asthmatics cohort (GACRS). We also find evidence for **(iv)** sex-specific impacts of IUS on fetal lung, with more statistically significant IUS-associated miRNAs in male samples than female samples and distinct miRNA-mRNA networks by sex.
 
 ### Files in Repo
 
-`Data`: This repo includes processed data (miRNA counts; microarray normalized intensities) and sample metadata (IUS status, age) to reproduce the fetal lung analyses in the manuscript. See GEO links for raw data below.
+`Data`: This repo includes processed data (miRNA counts; microarray normalized intensities) and sample metadata (IUS status, age) to reproduce the fetal lung analyses in the manuscript. **See GEO links below for raw data.**
 
-`Scripts`: We also include code for the IUS differential expression analysis, IUS-by-sex interaction analysis, and DIABLO integration, starting from processed miRNA & mRNA data. We also performed a review of previously reported miRNA differential expression due to IUS/smoking.
+`Scripts`: We also include code for the IUS differential expression analysis, IUS-by-sex interaction analysis, and multi-'omic DIABLO integration, starting from processed miRNA & mRNA data. We also performed a review of previously reported miRNA differential expression due to IUS/smoking (supplementary files).
 
 ```
 File Structure
@@ -37,7 +34,7 @@ File Structure
 └─ sessionInfo.txt                 # version control
 ```
 
-Not shown here:
+**Not shown here:**
 
 * The code for miRNA-seq mapping, QC, and quantification (i.e., .fastq --> counts) are identical to that of our first publication on the miRNA data on sex-effects in fetal lung, shown in scripts 01 through 17 at the following Github repo: [\@chooliu/miRNASexDimorphismFetalLung](https://github.com/chooliu/miRNASexDimorphismFetalLung). 
 * Details of fetal lung gene expression profiling are described in the Kho, et al. manuscript and associated GEO link. The expression data provided in the Data folder were subsetted from a larger set of samples and probesets processed by Dr. Alvin T. Kho.
@@ -46,10 +43,13 @@ Not shown here:
 
 ### Key Links
 
-**Manuscript Links**
+**Manuscript & Citation**
 
-* Github Repo: [chooliu/FetalLung_miRNA_SmokeExposure](http://www.github.com/chooliu/FetalLung_miRNA_SmokeExposure)
-* manuscript currently under review, link to final published work, doi, etc will be added
+Rosenberg L, Liu C, Sharma R, Wood C, Vyhlidal CA, Gaedigk R, Kho AT, Ziniti JP, Celedón JC, Tantisira KG, Weiss ST, McGeachie MJ, Kechris K, Sharma S. Intrauterine Smoke Exposure, microRNA Expression during Human Lung Development, and Childhood Asthma. International Journal of Molecular Sciences. 2023; 24(9):7727. 
+
+* This Github Repo: [chooliu/FetalLung_miRNA_SmokeExposure](http://www.github.com/chooliu/FetalLung_miRNA_SmokeExposure) (analysis code)
+* Manuscript: [original article](https://www.mdpi.com/1422-0067/24/9/7727) (open access)
+* doi: [10.3390/ijms24097727](doi.org/10.3390/ijms24097727)
 
 **Raw Data, Hosted with NCBI GEO**
 
